@@ -1,3 +1,6 @@
+# Developed By: BALAJI N
+# Register Number 212220230006
+# To Read,display the image
 # READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.

@@ -1,6 +1,4 @@
-# Developed By: BALAJI N
-# Register Number 212220230006
-# To Read,display the image
+
 # READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
@@ -23,8 +21,8 @@ Use imwrite(filename, image) to write the image.
 End the program and close the output image windows.
 ## Program:
 ```python
-# Developed By:
-# Register Number
+# Developed By: BALAJI N
+# Register Number 212220230006
 # To Read,display the image
 import cv2
 img = cv2.imread('kakashi-hatake-wallpaper-hd-1366x768-396324.jpg',1)

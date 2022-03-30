@@ -86,7 +86,8 @@ cv2.waitKey(0)
 
 <br>
 
-![j2](https://user-images.githubusercontent.com/75234946/160672959-43bdab85-bab9-429c-b80b-ba00f71699b5.jpeg)
+![212220230006_kakashi_hatake 29-03-2022 22_20_18](https://user-images.githubusercontent.com/75234946/160758934-a43b7de2-d585-4f91-aef5-ae0307e321e9.png)
+
 
 <br>
 
@@ -94,7 +95,8 @@ cv2.waitKey(0)
 ### ii)Write the image
 
 <br>
-![j3](https://user-images.githubusercontent.com/75234946/160673009-d99220bb-8978-46fa-8cee-fbff2813c926.jpeg)
+![Untitled144 - Jupyter Notebook - Google Chrome 29-03-2022 22_26_23](https://user-images.githubusercontent.com/75234946/160759193-a8b4b147-6e2b-463c-9fce-e555d2f57fa6.png)
+
 <br>
 ### iii)Shape of the Image
 
@@ -104,23 +106,23 @@ cv2.waitKey(0)
 
 
 ### iv)Access rows and columns
-<br>
+
 
 
 ![j5](https://user-images.githubusercontent.com/75234946/160673409-22686314-5bb5-431b-9e43-e884dd222916.jpeg)
-<br>
+
 
 
 ### v)Cut and paste portion of image
-<br>
+
 ![j6](https://user-images.githubusercontent.com/75234946/160673587-6305098f-dd5c-410a-bd05-5813fbf6fdf0.jpeg)
-<br>
+
 
 
 ### vi)grey image
-<br>
+
 ![j1](https://user-images.githubusercontent.com/75234946/160673663-a688a871-76bb-4b6b-8ab1-83191b0910f7.jpeg)
-<br>
+
 
 
 ## Result:

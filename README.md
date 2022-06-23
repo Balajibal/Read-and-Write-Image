@@ -101,12 +101,16 @@ destroyAllWindows()
 <br>
 
 ### iv)Access rows and columns
+```
 ![output](./static/img/OUTP4.png)
+```
 <br>
 <br>
 
 ### v)Cut and paste portion of image
+```
 ![output](./static/img/OUTP5.png)
+```
 <br>
 <br>
 

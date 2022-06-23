@@ -1,8 +1,4 @@
-### EX NO : 01
-### DATE  : 30.03.2022
-# <p align="center"> READ AND WRITE AN IMAGE </p>
-
-
+# READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 i) Read, display, and write an image.
@@ -22,99 +18,76 @@ Use imshow(window_name, image) to display the image.
 Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
-
-</br>
-</br>
-</br>
-
 ## Program:
 ```python
-# Developed By:
-BALAJI N
-
-# Register Number:
-212220230006
-
+# Developed By: Balaji N
+# Register Number:212220230006
 # To Read,display the image
+import numpy as np
 import cv2
-dog_image = cv2.imread('dog.jpg',1)
-cv2.imshow('Puppy',dog_image)
+img = cv2.imread('k.jpg',1)
+cv2.imshow('image',img)
 cv2.waitKey(0)
-destroyAllWindows()
 
 
 # To write the image
-cv2.imwrite('new1.jpg',dog_image)
 
+cv2.imwrite('dk.jpg',img)
 
 
 # Find the shape of the Image
-import cv2
-dog_image = cv2.imread('dog.jpg',1)
-print(dog_image.shape)
+
+print(img.shape)
+
 
 
 
 # To access rows and columns
 import random
 for i in range(100):
-    for j in range(dog_image.shape[1]):
-        dog_image[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
-cv2.imshow('Dog',dog_image)
+    for j in range(img.shape[1]):
+        img[i][j]= [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow('image',img)
 cv2.waitKey(0)
-destroyAllWindows()
-
 
 
 # To cut and paste portion of image
-import cv2
-dog_image = cv2.imread('dog.jpg',-1)
-tag = dog_image[300:400,300:400]
-dog_image[50:150,50:150] = tag
-cv2.imshow('Dog',dog_image)
+
+bw2=cv2.imread("k.jpg",1)
+tag=bw2[30:100,30:120]
+bw2[50:120,100:190]=tag
+cv2.imshow("cutting portion",bw2)
 cv2.waitKey(0)
-destroyAllWindows()
-
-
-
-
-
-
-
+cv2.destroyAllWindows()
 
 ```
-## Output:
+## <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Output:
 
 ### i) Read and display the image
-![output](./static/img/OUTP1.png)
-<br>
-<br>
+![g1](https://user-images.githubusercontent.com/75235789/160869249-2d4b6302-30fa-4269-b473-1ffa14229774.jpg)
+
 
 ### ii)Write the image
-![output](./static/img/OUTP2.png)
-<br>
-<br>
+![Screenshot 2022-06-21 113345](https://user-images.githubusercontent.com/75235789/174727612-8266e23a-e63f-4187-be86-938de116f96c.png)
 
-### iii)Shape of the Image
-![output](./static/img/OUTP3.png)
-<br>
-<br>
+
+
+### <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>iii)Shape of the Image
+
+![g2](https://user-images.githubusercontent.com/75235789/160869370-080dd026-8c7f-45b0-ba21-201de427530a.jpg)
+
 
 ### iv)Access rows and columns
-```
-![output](./static/img/OUTP4.png)
-```
-<br>
-<br>
+![g3](https://user-images.githubusercontent.com/75235789/160869346-ccb0e264-ebcd-44dc-8c81-687c767f9c54.jpg)
 
-### v)Cut and paste portion of image
-```
-![output](./static/img/OUTP5.png)
-```
-<br>
-<br>
 
-## Result:
+### <br/><br/><br/><br/><br/><br/><br/>v)Cut and paste portion of image
+![g4](https://user-images.githubusercontent.com/75235789/160869404-4d3e493c-a007-4e76-ab3c-bbf432988228.jpg)
+
+
+## <br/><br/><br/><br/><br/><br/>Result:
 Thus the images are read, displayed, and written successfully using the python program.
+
+
 
 

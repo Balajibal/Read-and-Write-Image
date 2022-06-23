@@ -1,5 +1,8 @@
+### Ex.No:01 
+### DATE: 
+# <p align="center">READ AND WRITE AN IMAGE
 
-# READ AND WRITE AN IMAGE
+</p>
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 i) Read, display, and write an image.
@@ -21,20 +24,25 @@ Use imwrite(filename, image) to write the image.
 End the program and close the output image windows.
 ## Program:
 ```python
-# Developed By: BALAJI N
-# Register Number 212220230006
-# To Read,display the image
+# Developed By: Balaji N
+# Register Number:212220230006
+
+#import the library
 import cv2
-img = cv2.imread('kakashi-hatake-wallpaper-hd-1366x768-396324.jpg',1)
-cv2.imshow('212220230006_kakashi_hatake',img)
+
+# To Read,display the image
+img = cv2.imread('flower.jpg',1)
+cv2.imshow('nature',img)
 cv2.waitKey(0)
 
-
+#GREY IMAGE
+grey = cv2.imread('flower.jpg',0)
+cv2.imshow('nature',gray)
+cv2.waitKey(0)
 
 # To write the image
-cv2.imwrite('download.jpg',img)
 
-
+cv2.imwrite('ou2.jpg',grey)
 
 
 
@@ -43,34 +51,24 @@ print(img.shape)
 
 
 
-
 # To access rows and columns
+
 import random
 for i in range(200):
     for j in range(img.shape[1]):
         img[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
-cv2.imshow('kakashi_coloured',img)
+cv2.imshow('flower',img)
 cv2.waitKey(0)
-
-
 
 
 
 # To cut and paste portion of image
-img1 = cv2.imread('kakashi-hatake-wallpaper-hd-1366x768-396324.jpg',1)
+
+img1 = cv2.imread('flower.jpg',1)
 tag = img1[300:400:,300:400]
 img1[50:150,50:150] = tag
-cv2.imshow('img',img1)
+cv2.imshow('flower',img1)
 cv2.waitKey(0)
-
-
-
-# grey image
-grey = cv2.imread('kakashi-hatake-wallpaper-hd-1366x768-396324.jpg',0)
-cv2.imshow('212220230006_kakashi_hatake',img)
-cv2.waitKey(0)
-
-
 
 
 
@@ -84,46 +82,29 @@ cv2.waitKey(0)
 
 ### i) Read and display the image
 
-
-
-![212220230006_kakashi_hatake 29-03-2022 22_20_18](https://user-images.githubusercontent.com/75234946/160758934-a43b7de2-d585-4f91-aef5-ae0307e321e9.png)
-
-
-
-
+![o1](https://user-images.githubusercontent.com/75235334/173748125-b32c4ac9-eea9-4000-adec-fa1f45fc824f.png)
+### gray image
+![o2](https://user-images.githubusercontent.com/75235334/173748435-5aefa349-13fa-46a6-b22f-5397597f4054.png)
 
 ### ii)Write the image
 
-
-![Untitled144 - Jupyter Notebook - Google Chrome 29-03-2022 22_26_23](https://user-images.githubusercontent.com/75234946/160759193-a8b4b147-6e2b-463c-9fce-e555d2f57fa6.png)
+![output](./o3.png)
 
 
 ### iii)Shape of the Image
 
 
-![j4](https://user-images.githubusercontent.com/75234946/160673299-4855759b-8019-4106-a08d-c943d27fc558.png)
+![output](./o3.png)
 
 
 ### iv)Access rows and columns
 
-
-
-![kakashi_coloured 29-03-2022 22_23_16](https://user-images.githubusercontent.com/75234946/160759975-80cda2d3-87d7-4cf0-ab68-5bc0f559cd9b.png)
-
-
+![output](./o4.png)
 
 
 ### v)Cut and paste portion of image
 
-![Screenshot (13)](https://user-images.githubusercontent.com/75234946/160759783-5ea84dbf-005e-472e-96e1-fa17135111d5.png)
-
-
-
-
-### vi)grey image
-
-![212220230006_kakashi_hatake 30-03-2022 08_14_22](https://user-images.githubusercontent.com/75234946/160759562-e0175813-5912-4e8b-aa33-23e99099e90f.png)
-
+![output](./o5.png)
 
 
 ## Result:

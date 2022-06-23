@@ -1,9 +1,9 @@
-### Ex.No:01 
-### DATE: 
-# <p align="center">READ AND WRITE AN IMAGE
+### EX NO : 01
+### DATE  : 30.03.2022
+# <p align="center"> READ AND WRITE AN IMAGE </p>
 
-</p>
- AIM
+
+## AIM
 To write a python program using OpenCV to do the following image manipulations.
 i) Read, display, and write an image.
 ii) Access the rows and columns in an image.
@@ -22,53 +22,58 @@ Use imshow(window_name, image) to display the image.
 Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
+
+</br>
+</br>
+</br>
+
 ## Program:
 ```python
-# Developed By: Balaji N
-# Register Number:212220230006
+# Developed By:
+BALAJI N
 
-#import the library
-import cv2
+# Register Number:
+212220230006
 
 # To Read,display the image
-img = cv2.imread('flower.jpg',1)
-cv2.imshow('nature',img)
+import cv2
+dog_image = cv2.imread('dog.jpg',1)
+cv2.imshow('Puppy',dog_image)
 cv2.waitKey(0)
+destroyAllWindows()
 
-#GREY IMAGE
-grey = cv2.imread('flower.jpg',0)
-cv2.imshow('nature',gray)
-cv2.waitKey(0)
 
 # To write the image
-
-cv2.imwrite('ou2.jpg',grey)
+cv2.imwrite('new1.jpg',dog_image)
 
 
 
 # Find the shape of the Image
-print(img.shape)
+import cv2
+dog_image = cv2.imread('dog.jpg',1)
+print(dog_image.shape)
 
 
 
 # To access rows and columns
-
 import random
-for i in range(200):
-    for j in range(img.shape[1]):
-        img[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
-cv2.imshow('flower',img)
+for i in range(100):
+    for j in range(dog_image.shape[1]):
+        dog_image[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow('Dog',dog_image)
 cv2.waitKey(0)
+destroyAllWindows()
 
 
 
 # To cut and paste portion of image
-
-img1 = cv2.imread('flower.jpg',1)
-tag = img1[300:400:,300:400]
-img1[50:150,50:150] = tag
-cv2.imshow('flower',img1)
+import cv2
+dog_image = cv2.imread('dog.jpg',-1)
+tag = dog_image[300:400,300:400]
+dog_image[50:150,50:150] = tag
+cv2.imshow('Dog',dog_image)
 cv2.waitKey(0)
+destroyAllWindows()
 
 
 
@@ -81,31 +86,29 @@ cv2.waitKey(0)
 ## Output:
 
 ### i) Read and display the image
-
-![o1](https://user-images.githubusercontent.com/75235334/173748125-b32c4ac9-eea9-4000-adec-fa1f45fc824f.png)
-### gray image
-![o2](https://user-images.githubusercontent.com/75235334/173748435-5aefa349-13fa-46a6-b22f-5397597f4054.png)
+![output](./static/img/OUTP1.png)
+<br>
+<br>
 
 ### ii)Write the image
-
-![output](./o3.png)
-
+![output](./static/img/OUTP2.png)
+<br>
+<br>
 
 ### iii)Shape of the Image
-
-
-![output](./o3.png)
-
+![output](./static/img/OUTP3.png)
+<br>
+<br>
 
 ### iv)Access rows and columns
-
-![output](./o4.png)
-
+![output](./static/img/OUTP4.png)
+<br>
+<br>
 
 ### v)Cut and paste portion of image
-
-![output](./o5.png)
-
+![output](./static/img/OUTP5.png)
+<br>
+<br>
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
